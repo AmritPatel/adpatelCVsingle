@@ -1,0 +1,66 @@
+---
+name: Amrit D. Patel
+position: "Nuclear Engineer"
+address: "Kathmandu, Nepal "
+phone: +1 301 337 8362
+email: "amrit.david.patel@gmail.com"
+github: AmritPatel
+linkedin: amritdpatel
+aboutme: "My goal is collaboration with a team solving interesting problems in the field of nuclear engineering, especially applying particle transport methods for reactor and fuel design modeling, simulation, and uncertainty quantification."
+docname: "Resume"
+date: "`r format(Sys.time(), '%B %Y')`"
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Skills
+
+## Modeling and Simulation
+
+* Computer code simulation, data analysis, process automation.
+
+## Languages
+
+* R, Perl, Python, Fortran.
+
+## Leadership
+
+* Principal contributor for topical report, license amendment request, and guidance development safety review teams, presenting information to mid-size audiences, mentorship of peers, explaining technical material to non-technical audiences (members of the public) and management, oversight of interns.
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Planned/Conducted complex technical reviews in core nuclear engineering areas for the Offices of New Reactors and Nuclear Reactor Regulation (e.g., criticality, shielding, nuclear fuels, and method verication/validation) coordinating with project managers and technical staff in cross-cutting disciplines for several large projects (e.g., new reactor licensing, license renewal).",
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Planned/Conducted research for the Office of Research: FAVOR/DAKOTA coupling for uncertainty quantification studies; SCALE-MAVRIC/DAKOTA coupling for uncertainty quantification studies to assess safety margins of degraded PWR bioshield concrete; facilitated INL MOOSE-based Grizzly code installation and training for modeling of engineering fracture assessments of reactor pressure vessels on shared internal cloud-hosted Linux systems.",  
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Proficient in safety evaluation reporting and confirmatory analysis including: Use of computer codes to perform simulations (e.g., SCALE code suite, MCNP, DAKOTA); complex data analysis using statistical software packages; use of various programming/scripting languages for software development, input/output processing, database management, and creating dynamic figures/reports/presentations.",
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Communication and reporting skills: Development and presentation of original research in support of NRC guidance development for various audiences (e.g., senior level management, ACRS, national/international conferences).",
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Collaboratively developed new guidance documents (e.g., spent fuel pool criticality safety and neutron fluence regulatory guides); NRC representative on ANS 19.10 standard committee.",
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Developed and provided training (mostly one-on-one mentoring). An example can be provided upon request.",
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Collaborated with international cohorts via participation in OECD/NEA Working Party on Nuclear Criticality Safety and associated expert groups including contributions to calculational benchmark reports.",
+  "Intern", "Southern Nuclear Operating Company", "Birmingham, AL", "June 2007 - August 2007", "Worked with BWR core analysis engineers supporting Plant Hatch, Units 1 and 2.",
+  "Intern", "Southern Nuclear Operating Company", "Birmingham, AL", "June 2007 - August 2007", "Gained experience with CASMO-3/SIMULATE-3 via model implementation of a proposed control blade design; performed a study on the effect of the design on existing core.",
+  "Intern", "Southern Nuclear Operating Company", "Birmingham, AL", "June 2007 - August 2007", "Gained experience with GEH lattice physics codes working with bundle designs and control rod blade pattern development."
+ ) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "MS, Nuclear Engineering", "University of Florida", "Gainesville, FL", "2006 - 2009", "Research Assistant for radiation transport theory course",
+  "MS, Nuclear Engineering", "University of Florida", "Gainesville, FL", "2006 - 2009", "Master's thesis: Detailed Neutron Flux Characterization of the Experimental Shield Tank Facility at the UFTR",
+  "MS, Nuclear Engineering", "University of Florida", "Gainesville, FL", "2006 - 2009", "Received EIT certification",
+  "BS, Nuclear Engineering", "University of Florida", "Gainesville, FL", "2002 - 2006", "Inducted into Alpha Nu Sigma Honor Society",
+  "BS, Nuclear Engineering", "University of Florida", "Gainesville, FL", "2002 - 2006", "Member of American Nuclear Society (UF Chapter)"
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
