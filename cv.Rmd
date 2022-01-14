@@ -6,7 +6,7 @@ phone: +1 301 337 8362
 email: "amrit.david.patel@gmail.com"
 github: AmritPatel
 linkedin: amritdpatel
-aboutme: "My goal is collaboration with a team solving interesting problems in the field of nuclear engineering, especially applying particle transport methods for reactor and fuel design modeling, simulation, and uncertainty quantification."
+aboutme: "Looking forward to collaborating with a team solving big problems with major worldwide impact."
 docname: "Resume"
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
@@ -31,7 +31,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Leadership
 
-* Principal contributor for topical report, license amendment request, and guidance development safety review teams, presenting information to mid-size audiences, mentorship of peers, explaining technical material to non-technical audiences (members of the public) and management, oversight of interns.
+* Principal contributor for topical report, license amendment request, and guidance development safety review teams, presenting information to mid-size audiences, mentorship of peers, explaining technical material to non-technical audiences including members of the public and management, oversight of interns.
 
 # Experience
 ```{r}
