@@ -1,12 +1,10 @@
 ---
-name: Amrit D. Patel
-position: "Nuclear Engineer"
-address: "Bangkok, Thailand"
-phone: +1 301 337 8362
+name: Amrit Patel
+position: "Regulatory Engineer"
 email: "amrit.david.patel@gmail.com"
 github: AmritPatel
 linkedin: amritdpatel
-aboutme: "Looking forward to collaborating with a team solving big problems with major worldwide impact."
+aboutme: "Looking forward to collaborating with a team solving important problems with major worldwide impact."
 docname: "Resume"
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 414141
@@ -14,7 +12,7 @@ output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
-library(tidyverse)
+library(tibble)
 library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
@@ -23,27 +21,27 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Modeling and Simulation
 
-* Computer code simulation, data analysis, process automation.
+* Physics modeling, simulation, and VVUQ; data analysis; process automation
 
 ## Languages
 
-* R, Perl, Python, Fortran.
+* Python, R, Perl, Fortran
 
 ## Leadership
 
-* Principal contributor for topical report, license amendment request, and guidance development safety review teams, presenting information to mid-size audiences, mentorship of peers, explaining technical material to non-technical audiences including members of the public and management, oversight of interns.
+* Principal contributor for advanced reactor license application and topical report development in various safety analysis contexts, general licensing strategist, and mentor of colleagues.
 
 # Experience
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-    "Consulting Engineer", "NUMARK Associates, Inc.", "Remote", "July 2021 - Present", "Commercial nuclear power plant licensing for an international regulatory authority specializing in core physics methods verification and validation.",
+  "Regulatory Engineer", "Oklo, Inc.", "Remote", "April 2022 - Present", "Development of regulatory-facing technical products in the realm of safety analysis.",
+  "Consulting Engineer", "NUMARK Associates, Inc.", "Remote", "July 2021 - April 2022", "Commercial nuclear power plant licensing for an international regulatory authority specializing in core physics methods verification and validation.",
+  "Secondary School Technology & Design Teacher", "Lincoln School","Kathmandu, Nepal", "July 2019 - June 2020", "Taught courses for students to develop 21st century skills with an emphasis on information and communication technology literacy, media and internet literacy, data interpretation and analysis, computer programming through use of the design cycle of thinking, making, and refining.",
   "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Planned/Conducted complex technical reviews in core nuclear engineering areas for the Offices of New Reactors and Nuclear Reactor Regulation (e.g., criticality, shielding, nuclear fuels, and method verication/validation) coordinating with project managers and technical staff in cross-cutting disciplines for several large projects (e.g., new reactor licensing, license renewal).",
-  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Planned/Conducted research for the Office of Research: FAVOR/DAKOTA coupling for uncertainty quantification studies; SCALE-MAVRIC/DAKOTA coupling for uncertainty quantification studies to assess safety margins of degraded PWR bioshield concrete; facilitated INL MOOSE-based Grizzly code installation and training for modeling of engineering fracture assessments of reactor pressure vessels on shared internal cloud-hosted Linux systems.",  
+  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Planned/Conducted research for the Office of Research: FAVOR/DAKOTA coupling for uncertainty quantification studies; SCALE-MAVRIC/DAKOTA coupling for uncertainty quantification studies to assess safety margins of degraded PWR bioshield concrete.",  
   "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Proficient in safety evaluation reporting and confirmatory analysis including: Use of computer codes to perform simulations (e.g., SCALE code suite, MCNP, DAKOTA); complex data analysis using statistical software packages; use of various programming/scripting languages for software development, input/output processing, database management, and creating dynamic figures/reports/presentations.",
   "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Communication and reporting skills: Development and presentation of original research in support of NRC guidance development for various audiences (e.g., senior level management, ACRS, national/international conferences).",
-  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Collaboratively developed new guidance documents (e.g., spent fuel pool criticality safety and neutron fluence regulatory guides); NRC representative on ANS 19.10 standard committee.",
-  "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Developed and provided training (mostly one-on-one mentoring). An example can be provided upon request.",
   "Nuclear Engineer", "U.S. NRC", "Rockville, MD", "March 2009 - June 2019", "Collaborated with international cohorts via participation in OECD/NEA Working Party on Nuclear Criticality Safety and associated expert groups including contributions to calculational benchmark reports."
  ) %>% 
   detailed_entries(role, dates, company, loc, details)
